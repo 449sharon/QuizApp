@@ -1,0 +1,14 @@
+
+
+<ion-content padding class="home">
+ <div class="flex-container">
+   <div class="header">
+     <h1 style="color:aliceblue;font-size:50px ">Quiz App</h1>
+   </div>
+   <div class="main" *ngFor="let c of Education">
+     <div class="education">
+       <button ion-button (click)="education(c.categoryName, c.questions)">{{c.categoryName}}</button>
+     </div>
+   </div>
+ </div>
+</ion-content>

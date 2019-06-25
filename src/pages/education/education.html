@@ -1,0 +1,22 @@
+
+
+<ion-content >
+ 
+<ion-slides #slides >
+
+    <ion-slide *ngFor="let q of questions">
+      <h1 >{{q.question}}</h1>
+      <ion-list >
+        <ion-item *ngFor="let o of q.options" (click)="resultTotal(o.option)">
+            {{o.option}}
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+    <ion-slide>
+      <button ion-button full (click)="toTotal()">Show Result</button>
+    </ion-slide>
+ 
+</ion-slides>
+
+</ion-content>
+
